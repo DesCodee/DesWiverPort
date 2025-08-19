@@ -1,0 +1,751 @@
+body {
+    font-family: 'Lexend', sans-serif;
+    background-color: #F2F2F2;
+    color: #c7c7c7;
+    margin: 0;
+    padding: 20px;
+}
+header {
+    font-family: 'Lexend', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #ffffff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 0px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    margin-left: 150px; 
+}
+
+.header__logo-text {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #000000;
+    margin: 0 0 0 12px;
+    letter-spacing: 0px;
+}
+
+.header__logo-img {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+.header__nav {
+    flex: 3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.header__menu-item a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    font-size: 0.8em; 
+    padding: 5px 10px;
+    transition: color 0.2s;
+}
+
+.header__menu-item .header_button {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    font-size: 0.8em; 
+    background-color: #801515;
+    color: #fff ;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+/*
+
+.button {
+    background-color: #801515;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+*/ 
+
+header ul {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.header_button {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    background-color: #801515;
+    color: #fff;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.header_button:hover {
+    color: #801515;
+    border-color:#801515;
+    background-color: #fff;
+    box-shadow: 0 6px 24px #801515;
+    border:0,5px #801515;
+}
+
+section {
+  width: 100%;
+  max-width: auto;
+  margin: auto;
+  
+}
+
+h1 {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 800;
+    font-size: 3.5em;
+    color: #000000;
+    margin: 100px 0 20px;
+}
+
+h2 {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+    color: #000000;
+    margin: 100px 0 20px;
+}
+
+p {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #000000;
+    margin-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.about-me_button {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    background-color: #801515;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.portfolio {
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+    padding: 0 20px;
+}
+
+.portfolio__title {
+    font-family: 'Lexend', sans-serif;
+    font-size: 2.5em;
+    font-weight: 800;
+    color: #222;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.portfolio__desc {
+    font-size: 1.1em;
+    color: #444;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    font-family: 'Lexend', sans-serif;
+}
+
+.portfolio__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.portfolio__card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s;
+}
+
+.portfolio__card:hover {
+    box-shadow: 0 6px 24px rgba(0,0,0,0.13);
+}
+
+.portfolio__img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.portfolio__info {
+    padding: 24px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.portfolio__category {
+    font-size: 0.9em;
+    color: #801515;
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.portfolio__name {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #222;
+    margin: 0 0 10px 0;
+}
+
+.portfolio__text {
+    font-size: 1em;
+    color: #444;
+    margin: 0 0 18px 0;
+    line-height: 1.4;
+}
+
+.portfolio__btn {
+    background: #fff;
+    color: #801515;
+    border: 2px solid #801515;
+    border-radius: 8px;
+    padding: 8px 22px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.portfolio__btn:hover {
+    background: #801515;
+    color: #fff;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px; 
+    margin-bottom: 60px;
+    flex-direction: row;
+    text-align: center;
+    background: url('imgs/bg1.png') center center / cover no-repeat;
+    border-radius: 0px;
+}
+
+.about-me_img {
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+    
+.about-me__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    width: auto;
+}
+    
+.about-me_title {
+    font-size: 2.9em;
+    color: #000;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: 'Lexend', sans-serif;
+}
+    
+.about-me_text {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-left: 55px;
+    max-width: 400px;
+    text-align: left;
+}
+    
+.about-me_button {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    background-color: #801515;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+    
+.work-process {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+    background-color: #F0F1F3;
+}
+
+.work-process__left {
+    flex: 1;
+    min-width: 320px;
+    max-width: 420px;
+    margin-left: 50px; /* увеличивает отступ слева */
+}
+
+.work-process__title {
+    font-size: 2.5em;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 20px;
+    margin-top: 10px;;
+    margin-left: 20px;
+}
+
+.work-process__desc {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+    line-height: 1.5;
+    margin-left: 20px;
+}
+
+.work-process__cards {
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 30px;
+}
+
+.work-process__card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 26px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 220px;
+}
+
+.work-process__icon {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.work-process__card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #801515;
+}
+
+.work-process__card p {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.about-me2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    background: #fff;
+    border-radius: 24px;
+    padding: 48px 32px;
+    margin: 60px auto 250px auto; 
+    max-width: 1100px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+}
+
+.about-me2__img {
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px;
+    background: #eee;
+}
+
+.about-me2__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 500px;
+}
+
+.about-me2__title {
+    font-size: 2.3em;
+    font-weight: 800;
+    color: #222;
+    margin: 0 0 18px 0;
+    font-family: Lexend, sans-serif;
+    line-height: 1.1;
+}
+
+.about-me2__desc {
+    font-size: 1.1em;
+    color: #444;
+    margin: 0 0 16px 0;
+    line-height: 1.5;
+    font-family: 'Lexend', sans-serif;
+}
+
+.about-me2__buttons {
+    display: flex;
+    gap: 18px;
+    margin-top: 10px;
+}
+
+.about-me2__button {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 10px 28px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.about-me2__button--primary {
+    background: #801515;
+    color: #fff;
+}
+
+.about-me2__button--secondary {
+    background: #fff;
+    color: #801515;
+    border: 2px solid #801515;
+}
+
+.what_i_do {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px; 
+    margin-bottom: 60px;
+    flex-direction: row;
+    text-align: center;
+    background: url('imgs/bg1.jpg') center center / cover no-repeat;
+    border-radius: 25px;
+}
+
+.what_i_do__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+}
+    
+.what_i_do__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    width: auto;
+}
+    
+.about-me_title {
+    font-size: 2.9em;
+    color: #000;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: 'Lexend', sans-serif;
+}
+    
+.about-me_text {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-left: 55px;
+    max-width: 400px;
+    text-align: left;
+}
+    
+.what_i_do_bt {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    background-color: #801515;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.what-i-do {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 60px;
+    background: #f5f5f5;
+    padding: 80px 0 60px 0;
+}
+
+.what-i-do__left {
+    flex: 1;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 60px;
+}
+
+.what-i-do__title {
+    font-size: 2.5em;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-family: 'Lexend', sans-serif;
+}
+
+.what-i-do__desc {
+    font-size: 1.1em;
+    color: #444;
+    margin: 0 0 16px 0;
+    line-height: 1.5;
+    font-family: 'Lexend', sans-serif;
+}
+
+.what-i-do__button {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 10px 28px;
+    border-radius: 8px;
+    border: none;
+    background: #801515;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 18px;
+    transition: background 0.2s;
+}
+
+.what-i-do__right {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-right: 60px;
+}
+
+.what-i-do__card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 32px 28px;
+    min-width: 340px;
+}
+
+.what-i-do__card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #801515;
+}
+
+.what-i-do__card p {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+
+.footer__nav {
+    flex: 3;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction:row-reverse;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.footer__menu-item a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    font-size: 0.8em; 
+    padding: 5px 10px;
+    transition: color 0.2s;
+}
+
+.footer__menu-item .footer_button {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    font-size: 0.5em; 
+    background-color: #801515;
+    color: #fff ;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+footer ul {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.footer_button {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    background-color: #801515;
+    color: #fff;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Красивый градиентный фон с кругами */
+.background-circles {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(24px);
+    opacity: 0.22;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.circle--red {
+    width: 520px;
+    height: 520px;
+    left: -180px;
+    top: -120px;
+    background: radial-gradient(circle at 40% 40%, #801515 0%, #f2f2f2 80%);
+}
+
+.circle--gray {
+    width: 340px;
+    height: 340px;
+    right: -120px;
+    bottom: -80px;
+    background: radial-gradient(circle at 60% 60%, #c7c7c7 0%, #801515 80%);
+}
+
+.circle--white {
+    width: 260px;
+    height: 260px;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, #fff 0%, #801515 90%);
+    opacity: 0.10;
+    filter: blur(16px);
+}
+
+@media (max-width: 900px) {
+    .background-circles,
+    .circle {
+        display: none;
+    }
+}
